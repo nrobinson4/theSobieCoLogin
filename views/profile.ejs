@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/styles/read.css">
+  <title><%= pageTitle %></title>
+</head>
+<body>
+  <div class="profile">
+    <h1>Profile of <%= user.firstName %> <%= user.lastName %></h1>
+    <table>
+      <tr>
+        <th>First Name</th>
+        <td><%= user.firstName %></td>
+      </tr>
+      <tr>
+        <th>Last Name</th>
+        <td><%= user.lastName %></td>
+      </tr>
+      <tr>
+        <th>Student</th>
+        <td><%= user.isStudent ? 'Yes' : 'No' %></td>
+      </tr>
+      <tr>
+        <th>Affiliation</th>
+        <td><%= user.academicAffiliation %></td>
+      </tr>
+      <tr>
+        <th>Program</th>
+        <td><%= user.areaOfStudy %></td>
+      </tr>
+      <tr>
+        <th>Classification</th>
+        <td><%= user.classification %></td>
+      </tr>
+
+      <% if (user.hasResearch) { %>
+        <tr>
+          <th>Research Title</th>
+          <td><%= user.researchTitle %></td>
+        </tr>
+        <tr>
+          <th>Research Abstract</th>
+          <td><%= user.researchAbstract %></td>
+        </tr>
+        <tr>
+          <th>Co-Authors</th>
+          <td><%= user.coAuthor.join(', ') %></td>
+        </tr>
+        <tr>
+          <th>Session Preference</th>
+          <td><%= user.sessionPref %></td>
+        </tr>
+      <% } else { %>
+        <tr>
+          <th>Research Submitted</th>
+          <td>No research submitted.</td>
+        </tr>
+      <% } %>
+    </table>
+    <button onclick="window.location.href='/read'">Back to Registrants</button>
+  </div>
+</body>
+</html>

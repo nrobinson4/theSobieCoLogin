@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/read.css">
+    <title><%= pageTitle %></title>
+</head>
+<body>
+<div class = "registrant-page">
+    <h1>MongoDB Results</h1>
+
+    <h3>My Registrants for SOBIE '25!</h3>
+    <ul class="registrant-list">
+    <% if (registrantData && registrantData.length > 0) { %>
+        <% registrantData.forEach(function(registrant) { %>
+            <li>
+                <h4><%= registrant.firstName || 'N/A' %> <%= registrant.lastName || 'N/A' %></h4>
+                <p><strong>Student:</strong> <%= registrant.isStudent !== undefined ? (registrant.isStudent ? 'Yes' : 'No') : 'N/A' %></p>
+                <p><strong>Affiliation:</strong> <%= registrant.academicAffiliation || 'N/A' %></p>
+                <p><strong>Program:</strong> <%= registrant.areaOfStudy || 'N/A' %></p>
+                <p><strong>Classification:</strong> <%= registrant.classification || 'N/A' %></p>
+                <p><strong>User ID:</strong> <%= registrant._id || 'N/A' %></p>
+
+                <% if (registrant.hasResearch !== undefined && registrant.hasResearch) { %>
+                    <p><strong>Research Title:</strong> <%= registrant.researchTitle || 'N/A' %></p>
+                    <p><strong>Research Abstract:</strong> <%= registrant.researchAbstract || 'N/A' %></p>
+                    <p><strong>Co-Authors:</strong> <%= (registrant.coAuthor && registrant.coAuthor.length > 0) ? registrant.coAuthor.join(', ') : 'None' %></p>
+                    <p><strong>Session Preference:</strong> <%= registrant.sessionPref || 'N/A' %></p>
+                <% } else { %>
+                    <p><strong>Research:</strong> <em>No Research Submitted</em></p>
+                <% } %>
+
+                <!-- Personal Link to registrant's page -->
+                <a href="/profile/<%= registrant._id %>" class="registrant-link">View Profile</a>
+            </li>
+        <% }); %>
+    <% } else { %>
+        <li>No registrants found.</li>
+    <% } %>
+    </ul>
+
+    <hr>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<%- include('../partials/sobie-start') %>
+
+<nav id="navSobie" class="navbar navbar-light bg-light navbar-expand-sm border-bottom">
+  <span class="border-top border-bottom m-0 p-0 mt-2 " style="-webkit-transform:rotate(35deg); -moz-transform:rotate(35deg); transform:rotate(35deg); position: absolute; top: 0; right: 0">
+    BETA
+  </span>
+
+  <a class="navbar-brand border-1 rounded-pill text-center my-2 mx-4 px-4 sobie-logo" id="navSobieLogo" href="#">
+    <span class="fw-bold text-center" style="letter-spacing: .5em;">
+      S·O·B·I·E
+    </span>
+  </a>
+  <span class="fs-6 text-start"><i>The Society of Business, Industry, & Economics</i></span>
+  
+  <!--hamburger button-->
+  <button class="navbar-toggler me-4" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <ul class="navbar-nav mx-auto">
+        <li class="nav-item text-center">
+          <button class="btn btn-outline-success"
+            onclick="document.getElementById('id01').style.display='block'">Login</button>
+        </li>
+        <li class="nav-item text-center">
+          <button class="btn btn-outline-primary" onclick="window.location.href='/'">Home</button>
+      </li>
+
+  </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+    </div>
+  </nav>
+
+<!-- Modal -->
+
+<div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal"> &times;</span>
+  <div class="modal-dialog modal-dialog-centered">
+    <!-- Updated form: added action and method -->
+    <form action="/admin" method="POST" class="modal-content animate">
+      <div class="container-fluid">
+
+        <div class="navbar-brand border-1 rounded-pill text-center my-4 mx-2 px-2 sobie-logo" href="#">
+          <span class="fw-bold text-center" style="letter-spacing: .5em;">
+            S·O·B·I·E
+          </span>
+        </div>
+
+        <div class="modal-header">
+          <h1 class="modal-title">Login to Portal</h1>
+        </div>
+
+        <p>Enter your credentials below: </p>
+
+        <!-- Updated input names for email and password -->
+        <label for="email">Email: </label>
+        <input type="email" name="email" id="email" required><br>
+
+        <label for="password">Password: </label>
+        <input type="password" id="password" name="password" required><br>
+
+        <div class="d-grid gap-2 d-md-block">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Login</button>
+        </div>
+
+        <label>
+          <input type="checkbox" checked="checked" name="remember"> Remember me
+        </label>
+      </div>
+
+      <div class="container" style="background-color:#f1f1f1">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="btn btn-danger">Cancel</button>
+        <span class="password"> Forgot <a href="#">password?</a></span>
+      </div>
+    </form>
+  </div>
+</div>
