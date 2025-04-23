@@ -2,6 +2,7 @@
 
 A login/management system. This application includes user authentication, registration management, and admin features.
 Built with local DB, needs conversion to mongo for prod function
+Built with intention to convert admin, regular user login code found within views/public directories of main repo
 
 ## Features
 
