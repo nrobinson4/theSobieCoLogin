@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Panel | Sobie Co</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <%- include('partials/navbar') %>
+  
+  <div class="container mt-4">
+    <h1 class="mb-4">Admin Panel</h1>
+    
+    <%- include('partials/messages') %>
+    <!-- Main page for admins to see extended access -->
+    <div class="row">
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">User Management</h5>
+            <p class="card-text">Manage user accounts and permissions</p>
+            <a href="/admin/users" class="btn btn-primary">Manage Users</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Registrations</h5>
+            <p class="card-text">View and manage all event registrations</p>
+            <a href="/admin/registrations" class="btn btn-primary">Manage Registrations</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Email Users</h5>
+            <p class="card-text">Send emails to users and registrants</p>
+            <a href="/admin/email" class="btn btn-primary">Email Users</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Database stats for easy management -->
+    <div class="card mt-4">
+      <div class="card-header">
+        System Statistics
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Overview</h5>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card bg-light mb-3">
+              <div class="card-body">
+                <h5 class="card-title text-center"><%= users.length %></h5>
+                <p class="card-text text-center">Total Users</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card bg-light mb-3">
+              <div class="card-body">
+                <h5 class="card-title text-center"><%= users.filter(u => u.isAdmin).length %></h5>
+                <p class="card-text text-center">Administrators</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card bg-light mb-3">
+              <div class="card-body">
+                <h5 class="card-title text-center"><%= registrations.length %></h5>
+                <p class="card-text text-center">Total Registrations</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <a href="/dashboard" class="btn btn-secondary mt-3">Back to Dashboard</a>
+  </div>
+
+  <%- include('partials/footer') %>
+</body>
+</html>

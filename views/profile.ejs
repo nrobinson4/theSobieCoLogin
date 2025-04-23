@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile | Sobie Co</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <%- include('partials/navbar') %>
+  
+  <div class="container mt-4">
+    <div class="row">
+      <div class="col-md-8 m-auto">
+        <div class="card card-body">
+          <h1 class="text-center mb-3">Edit Profile</h1>
+          
+          <%- include('partials/messages') %>
+          <!-- When user clicks to see their profile -->
+          <form action="/profile" method="POST">
+            <div class="form-group">
+              <!-- Username -->
+              <label for="username">Username</label>
+              <input type="text" id="username" class="form-control" value="<%= user.username %>" disabled>
+              <small class="form-text text-muted">Username cannot be changed</small>
+            </div>
+            <div class="form-group">
+              <!-- Email -->
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" class="form-control" value="<%= user.email %>" required>
+            </div>
+            <h4 class="mt-4">Change Password</h4>
+            <div class="form-group">
+              <!-- Current Password -->
+              <label for="currentPassword">Current Password</label>
+              <input type="password" id="currentPassword" name="currentPassword" class="form-control" placeholder="Enter current password">
+            </div>
+            <div class="form-group">
+              <!-- New Password -->
+              <label for="newPassword">New Password</label>
+              <input type="password" id="newPassword" name="newPassword" class="form-control" placeholder="Enter new password">
+            </div>
+            <div class="form-group">
+              <!-- Confirm New Password -->
+              <label for="confirmPassword">Confirm New Password</label>
+              <input type="password" id="confirmPassword" name="confirmPassword" class="form-control" placeholder="Confirm new password">
+            </div>
+            <!-- Submit to save -->
+            <button type="submit" class="btn btn-primary btn-block">Update Profile</button>
+          </form>
+          <a href="/dashboard" class="btn btn-secondary mt-3">Back to Dashboard</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <%- include('partials/footer') %>
+</body>
+</html>

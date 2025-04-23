@@ -1,0 +1,392 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "admin",
+      "email": "admin@example.com",
+      "password": "$2b$10$5C3EIeqI2uiA7xPonzyx.uXU/CeDUpTFgZfVdid/dL4Lf2d5sLYli",
+      "isAdmin": true,
+      "registrations": []
+    },
+    {
+      "id": 2,
+      "username": "johndoe",
+      "email": "john.doe@example.com",
+      "password": "$2b$10$JGvbWtrsoBBkMaEK4pIFKePK3YviMkCFSOVG2FS9gSjzhB7XO86Ka",
+      "isAdmin": true,
+      "registrations": []
+    },
+    {
+      "id": 3,
+      "username": "janedoe",
+      "email": "jane.doe@example.com",
+      "password": "$2b$10$hpUa9NX12z5m.ijiu33XYexyWFxs7kWSPNBe0hGUBJ4VWnbneJPXi",
+      "isAdmin": false,
+      "registrations": []
+    },
+    {
+      "id": 4,
+      "username": "mikesmith",
+      "email": "mike.smith@example.com",
+      "password": "$2b$10$sZzseM7LUMH764R41PHwVOk2jauHtbmKdcqFAcezr0vWgdEKsaVOC",
+      "isAdmin": false,
+      "registrations": []
+    },
+    {
+      "id": 5,
+      "username": "sarahjones",
+      "email": "sarah.jones@example.com",
+      "password": "$2b$10$4wXnxFFcQh0PGMv7vGx.zOXWK9YCjR03cByM6RY334xraqT8jyn7q",
+      "isAdmin": false,
+      "registrations": []
+    },
+    {
+      "id": 6,
+      "username": "robertwilson",
+      "email": "robert.wilson@example.com",
+      "password": "$2b$10$w2NJxypyPjElivnS4/cXxuc2JErtP4R6gyeYxAGSSVUjJKQTr71Pe",
+      "isAdmin": false,
+      "registrations": []
+    },
+    {
+      "id": 7,
+      "username": "emilybrown",
+      "email": "emily.brown@example.com",
+      "password": "$2b$10$o74VT1jzIMiKy34C8bx6j.Ev8zT/buC//84eOSVsO7tyYZMCNogiC",
+      "isAdmin": false,
+      "registrations": []
+    },
+    {
+      "id": 8,
+      "username": "davidmiller",
+      "email": "david.miller@example.com",
+      "password": "$2b$10$bnO0oJJX/EfUBRYOidrgVeDwYqc8AknD.22CqV2ud12XKOIt6liO2",
+      "isAdmin": false,
+      "registrations": []
+    },
+    {
+      "id": 9,
+      "username": "lisathomas",
+      "email": "lisa.thomas@example.com",
+      "password": "$2b$10$7ViwPq10ARXih7Fo4hsisOJd9irborKIodFRejlyYtmGKaTx.uDe2",
+      "isAdmin": false,
+      "registrations": []
+    },
+    {
+      "id": 10,
+      "username": "jamesharris",
+      "email": "james.harris@example.com",
+      "password": "$2b$10$juziXganiPnJl21HYuG5KugnyNE9Wrvy5/AbCNbJegAK/805Utgem",
+      "isAdmin": false,
+      "registrations": []
+    },
+    {
+      "id": 11,
+      "username": "amyadams",
+      "email": "amy.adams@example.com",
+      "password": "$2b$10$ckMJ7K8Hz3pUnvUU/n.rROzU0zkZZUocQ5Nzfmw2JneigHJr44bDm",
+      "isAdmin": false,
+      "registrations": []
+    },
+    {
+      "id": 12,
+      "username": "marklee",
+      "email": "mark.lee@example.com",
+      "password": "$2b$10$g06NjQYDIHL5KiHox1ShNuoYZ/76vX/HICM.2VQoNOavmfoNCC9cC",
+      "isAdmin": false,
+      "registrations": []
+    },
+    {
+      "id": 13,
+      "username": "susanclark",
+      "email": "susan.clark@example.com",
+      "password": "$2b$10$MLyqq8fRS2B6R.9srtYVaOGJVPxZ3Ez.9zV548ieuTcnL4vi0u/zq",
+      "isAdmin": false,
+      "registrations": []
+    },
+    {
+      "id": 14,
+      "username": "michaeljohnson",
+      "email": "michael.johnson@example.com",
+      "password": "$2b$10$zo6fO6hndRg4a6mJDYa6KOd6LYbRDSoZeZ2T4sAWFsO3sNxg6foqO",
+      "isAdmin": false,
+      "registrations": []
+    },
+    {
+      "id": 15,
+      "username": "patriciabaker",
+      "email": "patricia.baker@example.com",
+      "password": "$2b$10$tPMFmmz7.oNcUpIdGhjK3uE/ykcH26lg2hqcyN1Cyk1fhG3syzvIO",
+      "isAdmin": false,
+      "registrations": []
+    },
+    {
+      "id": 16,
+      "username": "christopherjackson",
+      "email": "christopher.jackson@example.com",
+      "password": "$2b$10$Gc/7invLqV5g9KybYsHj/uaj0iTGBSqklWaICuQeIxlf4D9sWGt9S",
+      "isAdmin": false,
+      "registrations": []
+    },
+    {
+      "id": 17,
+      "username": "jennymartin",
+      "email": "jenny.martin@example.com",
+      "password": "$2b$10$7fK9jLsAbHVOBPbaQvJ/Jev5cO3/NiNxijcr5NCG7bUXeIb1SZ8D.",
+      "isAdmin": false,
+      "registrations": []
+    },
+    {
+      "id": 18,
+      "username": "richardthompson",
+      "email": "richard.thompson@example.com",
+      "password": "$2b$10$KmmudYvEndbUV4NUb8hLOOzOQvDnQ1SH9WQ7MahsAwa3e6QBdNxn2",
+      "isAdmin": false,
+      "registrations": []
+    },
+    {
+      "id": 19,
+      "username": "carolinewhite",
+      "email": "caroline.white@example.com",
+      "password": "$2b$10$gBjrkb4d4RnhYulpzet3D.D2iTJ0WY.oLGBtyiLqX8lHsij7HxHju",
+      "isAdmin": false,
+      "registrations": []
+    },
+    {
+      "id": 20,
+      "username": "danieltaylor",
+      "email": "daniel.taylor@example.com",
+      "password": "$2b$10$ngd8eKPZzVjIMlS11mpEhewhWpyaxftaJZJa6CbPH6R9LexfNE6sm",
+      "isAdmin": false,
+      "registrations": []
+    },
+    {
+      "id": 21,
+      "username": "manager",
+      "email": "manager@example.com",
+      "password": "$2b$10$Sjpyywm/ehP2kErzMDYAnuuakOqkts0UvNQX81C/.Tycv2u2XF/r2",
+      "isAdmin": true,
+      "registrations": []
+    },
+    {
+      "id": 22,
+      "username": "nolen",
+      "email": "nolenariton@gmail.com",
+      "password": "$2b$10$ZVFLeeBo82Ri06Uzxg8YCuV6RQdN2LG1sBdzQiRDYEWFXndnHmzAK",
+      "isAdmin": false,
+      "registrations": []
+    }
+  ],
+  "registrations": [
+    {
+      "id": 1,
+      "userId": 2,
+      "eventName": "Annual Conference 2025",
+      "eventDate": "2025-06-15",
+      "registrationDate": "2025-04-01T10:15:30.000Z"
+    },
+    {
+      "id": 2,
+      "userId": 3,
+      "eventName": "Annual Conference 2025",
+      "eventDate": "2025-06-15",
+      "registrationDate": "2025-04-02T08:30:45.000Z"
+    },
+    {
+      "id": 3,
+      "userId": 2,
+      "eventName": "Web Development Workshop",
+      "eventDate": "2025-05-20",
+      "registrationDate": "2025-04-01T14:20:10.000Z"
+    },
+    {
+      "id": 4,
+      "userId": 4,
+      "eventName": "Web Development Workshop",
+      "eventDate": "2025-05-20",
+      "registrationDate": "2025-04-03T09:45:22.000Z"
+    },
+    {
+      "id": 5,
+      "userId": 5,
+      "eventName": "AI Summit",
+      "eventDate": "2025-07-10",
+      "registrationDate": "2025-04-04T11:05:18.000Z"
+    },
+    {
+      "id": 6,
+      "userId": 6,
+      "eventName": "AI Summit",
+      "eventDate": "2025-07-10",
+      "registrationDate": "2025-04-04T13:25:55.000Z"
+    },
+    {
+      "id": 7,
+      "userId": 7,
+      "eventName": "Data Science Bootcamp",
+      "eventDate": "2025-08-05",
+      "registrationDate": "2025-04-05T15:40:32.000Z"
+    },
+    {
+      "id": 8,
+      "userId": 8,
+      "eventName": "Data Science Bootcamp",
+      "eventDate": "2025-08-05",
+      "registrationDate": "2025-04-05T16:30:27.000Z"
+    },
+    {
+      "id": 9,
+      "userId": 9,
+      "eventName": "Data Science Bootcamp",
+      "eventDate": "2025-08-05",
+      "registrationDate": "2025-04-06T10:22:48.000Z"
+    },
+    {
+      "id": 10,
+      "userId": 10,
+      "eventName": "Cloud Computing Conference",
+      "eventDate": "2025-09-12",
+      "registrationDate": "2025-04-06T14:15:35.000Z"
+    },
+    {
+      "id": 11,
+      "userId": 11,
+      "eventName": "Cloud Computing Conference",
+      "eventDate": "2025-09-12",
+      "registrationDate": "2025-04-07T09:05:40.000Z"
+    },
+    {
+      "id": 12,
+      "userId": 12,
+      "eventName": "Mobile App Development Workshop",
+      "eventDate": "2025-10-18",
+      "registrationDate": "2025-04-08T11:35:22.000Z"
+    },
+    {
+      "id": 13,
+      "userId": 13,
+      "eventName": "Mobile App Development Workshop",
+      "eventDate": "2025-10-18",
+      "registrationDate": "2025-04-08T13:40:10.000Z"
+    },
+    {
+      "id": 14,
+      "userId": 14,
+      "eventName": "Cybersecurity Seminar",
+      "eventDate": "2025-11-05",
+      "registrationDate": "2025-04-09T10:12:55.000Z"
+    },
+    {
+      "id": 15,
+      "userId": 15,
+      "eventName": "Cybersecurity Seminar",
+      "eventDate": "2025-11-05",
+      "registrationDate": "2025-04-09T14:30:15.000Z"
+    },
+    {
+      "id": 16,
+      "userId": 16,
+      "eventName": "Blockchain Technology Forum",
+      "eventDate": "2025-12-10",
+      "registrationDate": "2025-04-10T09:25:40.000Z"
+    },
+    {
+      "id": 17,
+      "userId": 17,
+      "eventName": "Blockchain Technology Forum",
+      "eventDate": "2025-12-10",
+      "registrationDate": "2025-04-10T11:50:30.000Z"
+    },
+    {
+      "id": 18,
+      "userId": 18,
+      "eventName": "UI/UX Design Masterclass",
+      "eventDate": "2026-01-15",
+      "registrationDate": "2025-04-11T13:20:45.000Z"
+    },
+    {
+      "id": 19,
+      "userId": 19,
+      "eventName": "UI/UX Design Masterclass",
+      "eventDate": "2026-01-15",
+      "registrationDate": "2025-04-11T15:45:12.000Z"
+    },
+    {
+      "id": 20,
+      "userId": 20,
+      "eventName": "DevOps Pipeline Workshop",
+      "eventDate": "2026-02-20",
+      "registrationDate": "2025-04-12T10:10:55.000Z"
+    },
+    {
+      "id": 21,
+      "userId": 3,
+      "eventName": "DevOps Pipeline Workshop",
+      "eventDate": "2026-02-20",
+      "registrationDate": "2025-04-12T11:30:25.000Z"
+    },
+    {
+      "id": 22,
+      "userId": 5,
+      "eventName": "Agile Project Management",
+      "eventDate": "2026-03-18",
+      "registrationDate": "2025-04-13T14:15:40.000Z"
+    },
+    {
+      "id": 23,
+      "userId": 7,
+      "eventName": "Agile Project Management",
+      "eventDate": "2026-03-18",
+      "registrationDate": "2025-04-13T16:20:35.000Z"
+    },
+    {
+      "id": 24,
+      "userId": 9,
+      "eventName": "Internet of Things Expo",
+      "eventDate": "2026-04-22",
+      "registrationDate": "2025-04-14T09:45:30.000Z"
+    },
+    {
+      "id": 25,
+      "userId": 11,
+      "eventName": "Internet of Things Expo",
+      "eventDate": "2026-04-22",
+      "registrationDate": "2025-04-14T10:55:20.000Z"
+    },
+    {
+      "id": 26,
+      "userId": 13,
+      "eventName": "Digital Marketing Masterclass",
+      "eventDate": "2026-05-17",
+      "registrationDate": "2025-04-15T13:40:15.000Z"
+    },
+    {
+      "id": 27,
+      "userId": 15,
+      "eventName": "Digital Marketing Masterclass",
+      "eventDate": "2026-05-17",
+      "registrationDate": "2025-04-15T15:25:10.000Z"
+    },
+    {
+      "id": 28,
+      "userId": 17,
+      "eventName": "Software Testing Bootcamp",
+      "eventDate": "2026-06-12",
+      "registrationDate": "2025-04-16T09:15:45.000Z"
+    },
+    {
+      "id": 29,
+      "userId": 19,
+      "eventName": "Software Testing Bootcamp",
+      "eventDate": "2026-06-12",
+      "registrationDate": "2025-04-16T11:05:35.000Z"
+    },
+    {
+      "id": 30,
+      "userId": 2,
+      "eventName": "Tech Leadership Summit",
+      "eventDate": "2026-07-08",
+      "registrationDate": "2025-04-17T14:30:25.000Z"
+    }
+  ]
+}
