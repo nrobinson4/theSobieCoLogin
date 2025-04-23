@@ -39,3 +39,4 @@ The application uses a JSON file (`data/users.json`) as a testing database. Swit
 - This is a demonstration project and not intended for production use without further security enhancements
 - The email functionality is simulated and will log emails to the console
 - Password reset generates a temporary password that would normally be sent via email
+- Need latest bcrypt, connect-flash, ejs, express, express-session versions to work in right conditions
